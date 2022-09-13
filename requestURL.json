@@ -1,0 +1,12 @@
+{
+    "base_URL" : "https://reqres.in/api",
+    "end_points": 
+    [
+        {
+        "get_request": "/users?page=2",
+        "post_request": "/login",
+        "put_request" : "/users/2",
+        "delete_request" : "/users/2"
+        }
+    ]
+}
