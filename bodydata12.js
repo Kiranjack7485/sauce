@@ -1,0 +1,12 @@
+export let bodyData2 = [{"name":"Tenali Ramakrishna", 
+                "gender":"male", 
+                "email":`tenali.ramakrishna${Math.round(Math.random()*100)}@15ce.com`,
+                 "status":"active"},
+                 {"name":"think pad", 
+                 "gender":"male", 
+                 "email":`think.pad${Math.round(Math.random()*100)}@15ce.com`,
+                  "status":"active"},
+                  {"name":"kiran nayak", 
+                  "gender":"male", 
+                  "email":`kiran.nayak${Math.round(Math.random()*100)}@15ce.com`,
+                   "status":"active"}]

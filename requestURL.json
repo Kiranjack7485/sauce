@@ -8,5 +8,11 @@
         "put_request" : "/users/2",
         "delete_request" : "/users/2"
         }
+    ],
+    "base_URL1": "https://gorest.co.in",
+    "end_points1": [
+        {
+            "gorest_post": "/public/v2/users"
+        }
     ]
 }

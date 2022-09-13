@@ -1,11 +1,14 @@
 import fetch from 'node-fetch';
 import {} from 'dotenv/config';
+import links from "../New API/requestURL.json" assert {type: "json"};
+import {bodyData2} from '../New API/bodydata12.js'
 
 
-let bodyData = {"name":"Tenali Ramakrishna", 
-                "gender":"male", 
-                "email":`tenali.ramakrishna${Math.round(Math.random()*100)}@15ce.com`,
-                 "status":"active"}
+
+let bodyData = {"name":bodyData2[2].name, 
+                "gender":bodyData2[2].gender, 
+                "email":bodyData2[2].email,
+                 "status":bodyData2[2].status}
 
 export default class goRestApi {
 
@@ -38,6 +41,6 @@ export default class goRestApi {
 
 }
 let myObj =  new goRestApi();
-let response1 = myObj.myRequest(`https://gorest.co.in/public/v2/users`,bodyData);
+let response1 = myObj.myRequest(`${links.base_URL1}${links.end_points1[0].gorest_post}`,bodyData);
 console.log("Response from the server is:", await response1);
 
